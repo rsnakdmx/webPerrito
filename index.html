@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+  	<link rel="stylesheet" href="css/footer-basic-centered.css">
+    <script src="jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Sociedad de adopción :v</title>
+  </head>
+
+  <body>
+    <style>
+      #chico:hover{
+        opacity: 0.7;
+      }
+      #mediano:hover{
+        opacity: 0.7;
+      }
+      #grande:hover{
+        opacity: 0.7;
+      }
+    </style>
+
+    <script>
+      $(document).ready(function(){
+        $("#chico").click(function(){
+          $("#chicoinfo").slideToggle("slow");
+        })
+      })
+
+      $(document).ready(function(){
+        $("#mediano").click(function(){
+          $("#medinfo").slideToggle("slow");
+        })
+      })
+
+      $(document).ready(function(){
+        $("#grande").click(function(){
+          $("#grandeinfo").slideToggle("slow");
+        })
+      })
+    </script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Adopte una mascota >:v</a>
+        </div>
+        <ul class="nav navbar-nav nav navbar-right">
+          <li class="active"><a href="#">Inicio</a></li>
+          <li><a href="#info">¿Quienes somos?</a></li>
+          <li><a href="#basica">Información básica</a></li>
+          <li><a href="#registro">Adopciones</a></li>
+          <li><a href="#acerca">Acerca del sitio</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+          <img src ="perritou.jpeg" class="center-block" style="opacity: 0.85;">
+        </div>
+    </div>
+    <hr>
+
+    <div class="container" id="info">
+      <div>
+        <h1 style="text-align: right">¿Quienes somos?</h1>
+        <p class="text-justify" style="font-size: large">
+          Somos una Asociación Protectora de Animales legalmente constituida,
+          que labora en Aguascalientes.
+          Promovemos la adopción y rehabilitamos animales para brindarles una
+          segunda oportunidad de vida.
+          Creamos campañas de concientización y respeto a los animales,
+          impartimos pláticas y conferencias de tenencia responsable de mascotas.
+          Realizamos talleres de protección animal.
+          Somos 40 Activistas que día a día trabajamos en búsqueda del respeto
+          y cuidado de los menos protegidos... los animales.
+          Hasta Agosto de 2011 10 clínicas veterinarias nos apoyan, 1 boutique
+          para mascotas, 1 estética canina y 2 escuelas de adiestramiento canino.
+          Hemos impartido pláticas a más de 2,180 alumnos de diferentes
+          escuelas en todo el Municipio de Aguascalientes.
+        </p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container" id="basica">
+      <div class="informacion">
+        <h1>Información básica antes de adoptar</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <p class="text-center" style="font-size: x-large">Razas pequeñas</p>
+            <div>
+              <p class="text-justify" style="font-size: medium; display: none;" id="chicoinfo">
+                Se incluyen en este grupo los que podríamos llamar perros de
+                compañía; perfectamente adaptables a vivir en pequeños espacios,
+                muy sociables, de fácil convivencia con niños.
+                Se denominan así las razas cuyo peso se encuentra entre 5 y 15
+                Kgs. y en torno a los 30 cm. de alzada.
+                Entre las razas pequeñas más populares encontramos; al Bichón
+                Frisé, al Spaniel o al Carlino así como los de menor tamaño
+                (Toys); Chihuahua, Maltés o Yorkshire Terrier.
+              </p>
+            <img src="pequeno.jpg" style="height: 250px;
+              width: 300px" class="center-block" id="chico">
+          </div>
+        </div>
+          <div class="col-md-4">
+            <p class="text-center" style="font-size: x-large">Razas medianas</p>
+            <div>
+              <p class="text-justify" style="font-size: medium; display: none;" id="medinfo">
+                Se incluyen en este grupo muchas de las razas más comunes.
+                Por lo general, se tratará de perros fácilmente adaptables a
+                vivir en apartamentos aunque teniendo en cuenta la necesidad
+                de paseos diarios para que puedan jugar y ejercitarse.
+                Se denominan así las razas cuyo peso se encuentra entre 15 y
+                25 Kgs. y en torno a los 30 / 40 cm. de alzada.
+                Existe gran variedad de razas medianas, entre las más conocidas
+                encontramos al Chow Chow, al Bulldog o al Basset.
+              </p>
+              <img src="mediano.jpg" style="height: 250px;
+                width: 300px" class="center-block" id="mediano">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="text-center" style="font-size: x-large">Razas grandes</p>
+            <div>
+              <p class="text-justify" style="font-size: medium; display: none;" id="grandeinfo">
+                Se incluyen en este grupo muchas de las razas que, debido a
+                su porte, podríamos llamar perros guardianes por excelencia.
+                Asimismo habrá que tener en cuenta que, por sus características
+                físicas, van a necesitar lugares amplios donde poder ejercitar
+                su musculatura.
+                Se denominan así las razas cuyo peso se encuentra entre 25 y
+                45 Kgs. y en torno a los 40 / 60 cm. de alzada.
+                Existe gran variedad de razas grandes, entre las más conocidos
+                encontramos al Pastor Alemán, al Golden Retriever, o al Braco
+                de Weimar.
+              </p>
+              <img src="grande.jpeg" style="height: 250px;
+                width: 300px" class="center-block" id="grande">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container" id="registro">
+      <h1>Registro de interesados</h1>
+      <div class="formulario">
+        <form method="POST" action="registrar.php">
+          <div>
+            <label>Nombre del interesado</label>
+            <input name="nombre" type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div>
+            <label>Apellidos</label>
+            <input name="apellido" type="text" class="form-control" placeholder="Apellido">
+          </div>
+          <div>
+            <label>Dirección</label>
+            <input name="direc" type="text" class="form-control" placeholder="Dirección">
+          </div>
+          <div>
+            <label>Correo electronico</label>
+            <input name="email" type="text" class="form-control" placeholder="E-mail">
+          </div>
+          <div>
+            <label>Teléfono</label>
+            <input name="telefono" type="text" class="form-control" placeholder="Teléfono">
+          </div>
+          <br>
+          <input type="submit" value="Registrar">
+        </form>
+      </div>
+    </div>
+    <hr>
+
+    <footer class="footer-basic-centered" id="acerca">
+			<p class="footer-company-motto">Centro de adopción :v</p>
+			<p class="footer-links">
+				<a href="#">Inicio</a>
+        &nbsp &nbsp &nbsp
+				<a href="http://facebook.com/proteco" target="blank">
+          Facebook asociación
+        </a>
+        &nbsp &nbsp &nbsp
+				<a href="https://twitter.com/proteco" target="blank">
+          Twitter asociación
+        </a>
+        &nbsp &nbsp &nbsp
+				<a href="https://www.facebook.com/SirSnEak" target="blank">
+          Facebook Web master
+        </a>
+        &nbsp &nbsp &nbsp
+        <a href="mailto:rsnakdmx@hotmail.com" target="blank">
+          Contacto Web master
+        </a>
+			</p>
+			<p class="footer-company-name">PROTECO &copy; 2016</p>
+		</footer>
+  </body>
+</html>
